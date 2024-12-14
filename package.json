@@ -4,12 +4,13 @@
   "description": "Repositório de API em Node, CLEAN Archtecture e TDD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "lint-staged": {
     "*.js": [
-      "standart --fix"
+      "standart --fix",
+      "git add"
     ]
   },
   "husky": {
@@ -21,6 +22,7 @@
   "license": "ISC",
   "devDependencies": {
     "husky": "^4.3.8",
+    "jest": "^29.7.0",
     "lint-staged": "^15.2.11",
     "standart": "^6.1.0"
   }
